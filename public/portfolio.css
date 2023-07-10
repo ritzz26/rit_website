@@ -3,11 +3,10 @@ body {
     background-color: rgb(198, 194, 162);
     font-family: sans-serif;
     padding-left: 5%;
-    padding-right: 5%;
+      padding-right: 5%;
   }
-
-  h1 {
-    text-align: center;
+  body h1{
+    text-align: center !important;
   }
   .topnav {
       background-color: #333;
@@ -29,7 +28,7 @@ body {
       background-color: #ddd;
       color: black;
     }
-
+  
     .click a{
       text-decoration: none;
       color: black;
@@ -48,17 +47,6 @@ body {
       border-radius: 2vw;
       background-color: lightblue;
       font-size: 1.5vw;
-      float:left;
-  }
-
-  .clickb{
-    float:right !important;
-    font-size: 1vw;
-  }
-
-  .clickb a{
-    text-decoration: none;
-    color: black;
   }
   
   button:hover{
@@ -70,12 +58,21 @@ body {
       box-shadow: 0 5px #666;
       transform: translateY(2px);
   }
+
+  .clickb{
+    float:right !important;
+    font-size: 1vw;
+  }
+
+  .clickb a{
+    text-decoration: none;
+    color: black;
+  }
+    
     .active{
       background-color: gray;
     }
   
     .home {
-      padding-top: 30%;
       padding-bottom: 30%;
     }
-

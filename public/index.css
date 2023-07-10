@@ -1,5 +1,5 @@
 body {
-  text-align: center;
+  text-align: left;
   background-color: rgb(198, 194, 162);
   font-family: sans-serif;
   padding-left: 5%;
@@ -34,19 +34,56 @@ body {
   .click{
     background-color: lightblue; /* Green */
     border: 1%;
-    padding: 15px 32px;
-    text-align: center;
+    text-align: center !important;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 1vw;
   }
+
+  button{
+    border-radius: 2vw;
+    background-color: lightblue;
+    font-size: 1.5vw;
+}
+
+button:hover{
+    background-color: rgb(88, 170, 197);
+}
+
+button:active{
+    
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
   
   .active{
     background-color: gray;
   }
 
   .home {
-    padding-top: 30%;
     padding-bottom: 30%;
   }
+
+  .home h1{
+    text-align: center;
+    font-size: 3vw;
+    animation: tilt-shaking 0.25s;
+  }
+
+  @keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  .image{
+    content: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+}
+.port {
+    float: left
+}
