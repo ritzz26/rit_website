@@ -41,7 +41,7 @@ body {
       text-align: center !important;
       text-decoration: none;
       display: inline-block;
-      font-size: 1vw;
+
     }
   
     button{
@@ -49,11 +49,11 @@ body {
       background-color: lightblue;
       font-size: 1.5vw;
       float:left;
+      width:20vw;
   }
 
   .clickb{
     float:right !important;
-    font-size: 1vw;
   }
 
   .clickb a{

@@ -30,20 +30,13 @@ body {
     text-decoration: none;
     color: black;
   }
-  
-  .click{
-    background-color: lightblue; /* Green */
-    border: 1%;
-    text-align: center !important;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1vw;
-  }
 
   button{
     border-radius: 2vw;
     background-color: lightblue;
     font-size: 1.5vw;
+    width: 20vw;
+    margin-left: 40%;
 }
 
 button:hover{
