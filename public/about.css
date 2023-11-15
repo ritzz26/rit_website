@@ -1,13 +1,17 @@
+/* RESTYLE?? */
 body {
     text-align: left;
-    background-color: rgb(198, 194, 162);
-    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans';
     padding-left: 5%;
     padding-right: 5%;
   }
   .topnav {
-      background-color: #333;
+      background-color: black;
       overflow: hidden;
+    }
+    .container{
+      color: black;
     }
     
     /* Style the links inside the navigation bar */
@@ -43,7 +47,7 @@ body {
     }
     
     .active{
-      background-color: gray;
+      background-color: rgb(65, 65, 65);
     }
 
     .image{

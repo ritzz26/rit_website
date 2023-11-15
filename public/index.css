@@ -1,17 +1,16 @@
 body {
   text-align: left;
-  background-color: rgb(198, 194, 162);
-  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Open Sans';
   padding-left: 5%;
-    padding-right: 5%;
+  padding-right: 5%;
 }
 .topnav {
-    background-color: #333;
+    background-color: black;
     overflow: hidden;
-    position: fixed;
-    top:0;
-    height: 8vh;
-    width: 85%;
+  }
+  .container{
+    color: black;
   }
   
   /* Style the links inside the navigation bar */
@@ -34,34 +33,38 @@ body {
     text-decoration: none;
     color: black;
   }
+  
+  .click{
+    background-color: lightblue; /* Green */
+    border: none;
+    padding: 1% 2%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2vw;
+  }
+  
+  .active{
+    background-color: rgb(65, 65, 65);
+  }
 
   button{
     border-radius: 2vw;
-    background-color: lightblue;
+    background-color: black;
     font-size: 1.5vw;
     width: 20vw;
     margin-left: 40%;
 }
 
 button:hover{
-    background-color: rgb(88, 170, 197);
+  background-color: #ddd;
+  color: black;
 }
 
 button:active{
-    
     box-shadow: 0 5px #666;
     transform: translateY(2px);
 }
-  
-  .active{
-    background-color: gray;
-  }
-
-  .home {
-    padding-bottom: 30%;
-    padding-top: 5vh;
-  }
-
   .home h1{
     text-align: center;
     font-size: 3vw;
