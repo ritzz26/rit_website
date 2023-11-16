@@ -1,10 +1,11 @@
 body {
   text-align: left;
   background-color: rgb(255, 255, 255);
-  font-family: 'Open Sans';
+  font-family: 'Roboto';
   padding-left: 5%;
   padding-right: 5%;
 }
+/* sticky navbar */
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -12,8 +13,6 @@ body {
   .container{
     color: black;
   }
-  
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -65,21 +64,8 @@ button:active{
     box-shadow: 0 5px #666;
     transform: translateY(2px);
 }
-  .home h1{
-    text-align: center;
-    font-size: 3vw;
-    animation: tilt-shaking 0.25s;
-  }
-
-  @keyframes tilt-shaking {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(0eg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
-  }
-
-  .image{
+/* smaller photo */
+.image{
     content: center;
     margin-left: 35%;
     margin-right: 35%;
