@@ -2,8 +2,8 @@ body {
   text-align: left;
   background-color: rgb(255, 255, 255);
   font-family: 'Roboto';
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 /* sticky navbar */
 .topnav {
