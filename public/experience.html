@@ -4,13 +4,25 @@
   <title>Rit Agarwal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
+    <img src="HEAD_LOGO.png">
     <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html" class="active">Portfolio</a>        
-        <a href="courses.html">Courses</a>
-        <a href="projects.html">Projects</a>
+        <div class="nav_left">
+            <a href="index.html">Home</a>
+            <a href="experience.html" class="active">Experience</a> 
+            <a href="courses.html">Courses</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <div class="nav_right">
+            <a href="https://www.linkedin.com/in/ritagarwal" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ritzz26/" target="_blank" class="github-icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </div>
     <div class = "container">
         <div class = "port">
@@ -88,11 +100,13 @@
                 Facilitated group discussions to students on a diverse range of topics<br><br>
                 Underwent over 100 hours of training in order to perform these tasks<br><br>
             </p>
-            <br>
-            <button class="click"> <a href="projects.html">View my past projects</a></button>
-            <button class="clickb"><a href="https://www.linkedin.com/in/ritagarwal/">View My LinkedIn</a></button>
+            <button class="click" onclick="redirect('projects.html')">View my past projects</button>
         </div>
-        
+        <script>
+            function redirect(link) {
+                window.location.href = "https://ritwebsite.web.app/"+link
+            }
+        </script>
     </div>
 </body>
 </html>

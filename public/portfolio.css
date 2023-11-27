@@ -1,90 +1,73 @@
-/* FIND LOGOS AND CHANGE THE BUTTONS */
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto/Roboto-Black.ttf') format('ttf');
+}
+
 body {
   text-align: left;
   background-color: rgb(255, 255, 255);
-  font-family: 'Open Sans';
+  font-family: 'Roboto', sans-serif;
   padding-left: 2%;
   padding-right: 2%;
 }
   body h1{
     text-align: center !important;
   }
+  /* Style the links inside the navigation bar */
   .topnav {
-    background-color: black;
+    background-color: #9dc2a3;
     overflow: hidden;
-  }
-  .container{
-    color: black;
+    position: sticky;
+    top: 0;
   }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 100%;
   }
   
-  /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .click a{
-    text-decoration: none;
-    color: black;
+    background-color: #3D6642;
+    color: white;
   }
   
   .click{
-    background-color: lightblue; /* Green */
+    height: auto;
+    border-radius: 2vw;
+    background-color: #503D42;
     border: none;
     padding: 1% 2%;
-    text-align: center;
-    display: inline-block;
     cursor: pointer;
-    font-size: 1.5vw;
+    color: white;
+    float: right;
   }
   
   .active{
-    background-color: rgb(65, 65, 65);
-  }
-  
-    button{
-      border-radius: 2vw;
-      background-color: lightblue;
-      font-size: 1.5vw;
-      width: 25vw;
-  }
-  
-  button:hover{
-      background-color: rgb(88, 170, 197);
-  }
-  
-  button:active{
-      
-      box-shadow: 0 5px #666;
-      transform: translateY(2px);
+    background-color: #3D6642;
+    color: white !important; 
   }
 
-  .clickb{
-    background-color: lightblue; /* Green */
-    border: none;
-    padding: 1% 2%;
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 1.5vw;
-    float:right !important;
-  }
-
-  .clickb a{
-    text-decoration: none;
-    color: black;
+  .nav_left{
+    /* padding-left: 35%;
+    text-align: center; */
+    float:left;
   }
   
-    .home {
-      padding-bottom: 30%;
+  img{
+    width: 6%;
+    height:auto;
+    float:left;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+  }
+  .nav_right{
+    float: right;}
+  
+    .port {
+      padding-bottom: 5%;
     }

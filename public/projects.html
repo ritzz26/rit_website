@@ -4,15 +4,26 @@
   <title>Rit Agarwal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
+    <img src="HEAD_LOGO.png">
     <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="courses.html">Courses</a>
-        <a href="projects.html" class="active">Projects</a>
+        <div class="nav_left">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a> 
+            <a href="courses.html">Courses</a>
+            <a href="projects.html" class="active">Projects</a>
+        </div>
+        <div class="nav_right">
+            <a href="https://www.linkedin.com/in/ritagarwal" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ritzz26/" target="_blank" class="github-icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </div>
-    <!-- FIX DESCRIPTIONS -->
     <div class = "container">
         <div class = "port">
             <h1>My Projects</h1>
@@ -32,10 +43,14 @@
                 <p>
                     Developed a 3D Penalty Shootout Game using JavaScript for Soccer Enthusiasts. Worked on collision detection, scale design of models in world space, aim guide, scoring and billboard for statistic display in order to create gameplay and user interaction.
                 </p>
-                <button class="click"> <a href="courses.html">View my courses</a></button>
-                <button class="clickb"><a href="https://github.com/ritzz26/">View my Github</a></button>
+                <button class="click" onclick="redirect('courses.html')">View my courses</button>
             </div>
         </div>
     </div>
+    <script>
+        function redirect(link) {
+            window.location.href = "https://ritwebsite.web.app/"+link
+        }
+    </script>
 </body>
 </html>
