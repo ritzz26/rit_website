@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rit Agarwal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <script scr="firebase.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <!-- change portfolio to Experience -->
+        <a href="portfolio.html">Portfolio</a> 
+        <a href="courses.html">Courses</a>
+        <a href="projects.html">Projects</a>
+        <!-- <button class="nav-butt">LinkedIn</button>
+        <button class="nav-butt">Github</button> -->
+    </div>
+    <div class="home">
+        <div class = "container">
+            <div>
+                <h2>About Me</h2>
+                    <img src="PIC.png" class="image"></img>
+            </div>
+            <div class = "port">
+                <p>
+                Born in India, raised in Africa with Indian values and with a hybrid of an Indian and African culture. 
+                UCLA Computer Science Major with a passion in Software Development, Cloud Development and Artificial Intelligence. 
+                Accomplished in customer service, counseling, leadership, time management and teamwork. 
+                Adept in understanding tasks with attention to detail and carrying out several tasks at once. 
+                Areas of Strength include: C++, C, JavaScript, Database management with Django and SQL, Docker, HTML, CSS, Python, Node.js, React.
+                </p>
+                <p>
+                Hobbies:<br>
+                Technological Advancements, Human Relations, Scientific facts, Mythology, History, Cars, Working Out, Golf, Tennis, Chess, Travelling
+                </p>
+            </div>
+        </div>
+        <button class="click"> <a href="portfolio.html">View my portfolio and experience</a></button>
+    </div>
+</body>
+</html>
+
+
+body {
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  /* sticky navbar */
+  .topnav {
+      background-color: black;
+      overflow: hidden;
+    }
+    .container{
+      color: black;
+    }
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  
+    .click a{
+      text-decoration: none;
+      color: black;
+    }
+    
+    .click{
+      background-color: lightblue; /* Green */
+      border: none;
+      padding: 1% 2%;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1.5vw;
+    }
+    
+    .active{
+      background-color: rgb(65, 65, 65);
+    }
+  
+    button{
+      border-radius: 2vw;
+      background-color: black;
+      font-size: 1.5vw;
+      width: 20vw;
+      margin-left: 40%;
+  }
+  
+  button:hover{
+    background-color: #ddd;
+    color: black;
+  }
+  
+  button:active{
+      box-shadow: 0 5px #666;
+      transform: translateY(2px);
+  }
+  /* smaller photo */
+  .image{
+      content: center;
+      margin-left: 35%;
+      margin-right: 35%;
+      width: 30%;
+  }
+  .port {
+      float: left
+  }
+  
+  
+
+
+
