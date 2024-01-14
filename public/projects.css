@@ -74,3 +74,13 @@ body {
 a{
   color: #503D42;
 }
+
+
+h1{
+  font-size: 150%;
+  text-align: center;
+}
+
+h2{
+  font-size: 130%;
+}

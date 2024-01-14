@@ -71,3 +71,16 @@ body {
     .port {
       padding-bottom: 5%;
     }
+
+    .dates{
+      float: right;
+      
+    }
+    h1{
+      font-size: 150%;
+      text-align: center;
+    }
+    h2{
+      font-size: 130%;
+    }
+    
