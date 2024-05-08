@@ -6,8 +6,6 @@ body {
   text-align: left;
   background-color: white;
   font-family: 'Roboto', sans-serif;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 
 .topnav {
@@ -55,6 +53,10 @@ img{
   color: white !important; 
 }
 
+.home{
+  padding-left: 2%;
+  padding-right: 2%;
+}
 
 h1{
   font-size: 150%;

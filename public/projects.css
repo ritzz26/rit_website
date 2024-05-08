@@ -7,6 +7,9 @@ body {
   text-align: left;
   background-color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
+}
+
+.container{
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -14,6 +17,8 @@ body {
     text-align: center !important;
   }
   .topnav {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
     background-color: #9dc2a3;
     overflow: hidden;
     position: sticky;
