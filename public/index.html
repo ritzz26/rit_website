@@ -1,154 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Rit Agarwal</title>
-  <link rel="icon" href="TITLE_LOGO.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="index.css">
-  <script scr="firebase.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
-</head>
-<body>
-    <img src="HEAD_LOGO.png">
-    <div class="topnav">
-        <div class="nav_left">
-            <a href="index.html" class="active">Home</a>
-            <a href="experience.html">Experience</a> 
-            <a href="courses.html">Courses</a>
-            <a href="projects.html">Projects</a>
-        </div>
-        <div class="nav_right">
-            <a href="https://www.linkedin.com/in/ritagarwal" target="_blank" class="linkedin-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/ritzz26/" target="_blank" class="github-icon">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
+<html>
+<title>Rit Agarwal</title>
+<link rel="icon" href="TITLE_LOGO.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+#main {margin-left: 3vw; margin-right:3vw }
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="black">
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="nav-item">HOME</a>
+        <a href="#about" class="nav-item">ABOUT</a>
+        <a href="#projects" class="nav-item">PROJECTS</a>
+        <a href="#experience" class="nav-item">EXPERIENCE</a>
+        <a href="#contact" class="nav-item">CONTACT</a>
     </div>
-    <div class="home">
-        <h1>Welcome to my Page</h1>
-        <!-- chat bot? tell me what you are looking for -->
-        <!-- graphic of something being typed, prompt a question and offer some answers -->
-        <div class="exp">
-            <h2>
-                <!-- <span class="firsthead">Recent</span>
-                <span class="sechead">Experience</span> -->
-                Recent Experiences
-            </h2>
-            <h3>Full Stack Web Developer - 
-                <span class="location">Bruin Sports Analytics</span>
-            </h3>
-                <h4>
-                    Los Angeles, CA
-                    <span class="dates"><i>January 2024 - Present</i></span>
-                </h4>
-                <p>
-                    Created a user-friendly Web App to improve analytic capabilities for the UCLA Men’s Tennis Team using React.js<br><br>
-                    Developed a dynamic scoreboard feature, seamlessly integrated with an embedded Youtube Player to view the score with the video<br><br>
-                    Led redesign of main page to make it more user friendly by replacing a static PDF with a dynamically styled python script<br><br>
-                    Implemented changes in the production pipeline to ensure a smoother transition to production by establishing a development environment<br><br>
-                </p>
-                <h3>External Vice President - 
-                    <span class="location">Bruin Spacecraft Group</span>
-                </h3> 
-                <!-- decrease size of h3-->
-                    <h4>
-                        Los Angeles, CA
-                        <span class="dates"><i>June 2023 - Present</i></span>
-                    </h4>
-                    <p>
-                        Managing a team of 12 for building and maintaining corporate relationships with over 30 corporations and curating events for UCLA students as well as middle school and high school students <br><br>
-                         Established 4 events and 3 potential sponsors in the pipeline for the quarter with 2 community outreach events to instill a passion for STEM in schools
-                    </p>
-            <h3>Software Engineering Intern - 
-                <span class="location">Pullscription LLC</span>
-            </h3> 
-            <!-- decrease size of h3-->
-                <h4>
-                    Remote
-                    <span class="dates"><i>June 2023 - September 2023</i></span>
-                </h4>
-                <p>
-                    Created a version of the Pullscription Web App using Vue.js, Typescript, Node.js, HTML, CSS, and JS as a part of training to understand
-                        frontend and backend tasks thoroughly giving me insight to what frontend needs from backend.<br><br>
-                    Optimized and debugged ETL jobs along with tests that imported comic books related data into the database to reduce end-to-end runtimes
-                        by 60%.<br><br>
-                    Implemented FAST APIs to expose programmatic read and write access to the database to query the imported data. This allowed the
-                        frontend team to create a UI for admin users to manage the our catalogs easily.<br><br>
-                    Built an error logging and collection system. This enabled us to build real-time alerts, reducing response times to outages by 80%.<br><br>
-                    <button onclick="redirect('experience.html')"><span class="transition"></span>
-                        <span class="gradient"></span>
-                        <span class="label">View More</span></button><br>
-                </p>
+</nav>
+
+
+<div id="main">
+    <header class="container" id="home">
+        <img src="headshot.jpg" class="profile-img">
+      <h1>I'm Rit Agarwal.</h1>
+      <p>An Aspiring and Driven Software Engineer.</p>
+    </header>
+    <div id="about">
+      <h2 class="w3-text-light-grey">Who am I?</h2>
+      <hr style="width:200px">
+      <p>
+          Born in India, raised in Africa with Indian values and with a hybrid of an Indian and African culture. 
+          UCLA Computer Science Major and Mathematics Minor with a passion in Software Development, Cloud Development and Artificial Intelligence. 
+          Accomplished in software engineering, teamwork, time management, leadership, customer service, and counseling.
+          Adept in understanding tasks with attention to detail and carrying out several tasks at once. 
+          Areas of Strength include: Python, C++, Terraform, JavaScript, Airflow Database management with AWS, Django and SQL. Experienced with Docker, Node.js, and React.
+      </p>
+      <p>
+          Hobbies:<br>
+          Technological Advancements, Human Relations, Scientific facts, Mythology, History, Cars, Working Out, Golf, Tennis, Chess, Travelling
+      </p>
+    <div clas="download_container">
+    <button>
+    <a href="Rit_Agarwal_Resume.pdf" download class="download-button" >
+        <i class="fa fa-download"></i> Download Resume
+        </a>
+    </button>
+</div>
+<br>
+    </div>
+  
+    <div id="projects">
+        <h2>My Projects</h2>
+        <hr style="width:200px">
+      
+        <div class="project-grid">
+          <div class="project-card">
+            <h2>CarMeet</h2>
+            <p>
+              Developed an application to foster a community of car enthusiasts using React, HTML, and Mongoose.
+              The app was backed by a machine learning algorithm that verified the image of the car to be a vehicle.
+              Designed page templates, implemented routing, and incorporated button functionalities allowing seamless integration of APIs in the front end,
+              along with a real-time chat feature which created the frontend style of the app and allowed page navigation easier.
+              Button functionalities allowed the backend APIs to be implemented in the frontend and the chat feature allowed users to chat with matches in real-time with a history of messages.
+            </p>
+            <a href="https://github.com/EggHeads-cs35l/car-meet">Learn More</a>
+          </div>
+      
+          <div class="project-card">
+            <h2>HitchHiker</h2>
+            <p>
+              Developed an application backed by OpenAI, to assist tourists in making their trips.
+              Included features such as timetables to allow visualization of the plans and filters for searches which helped with prompt engineering.
+              Established a Firebase Database using Typescript to store and display previous trips for users to make different versions.
+              Created and stylized a login page using GoogleOAuth and Email options for signing in.
+            </p>
+            <a href="https://github.com/ritzz26/hitchhiker">Learn More</a>
+          </div>
+      
+          <div class="project-card">
+            <h2>PacMan</h2>
+            <p>
+              Created Game using VGA display and FPGA board on Verilog.
+              This game was created for nostalgic gamers to play the game with more erratic ghost movement that followed PacMan as opposed to more random movement.
+              Worked on collision detection, display, scoring, button movement, and dynamic ghost movement.
+            </p>
+            <a href="https://github.com/ritzz26/Verilog_Pacman">Learn More</a>
+          </div>
+      
+          <div class="project-card">
+            <h2>SoccerBros</h2>
+            <p>
+              Developed a 3D Penalty Shootout Game using JavaScript for soccer enthusiasts.
+              Worked on collision detection, scale design of models in world space, aim guide, scoring, and billboard for statistic display in order to create gameplay and user interaction.
+            </p>
+            <a href="https://github.com/ritzz26/soccor_bros">Learn More</a>
+          </div>
         </div>
-        <div class="project">
-            <h2>
-                <!-- <span class="firsthead">Recent</span>
-                <span class="sechead">Experience</span> -->
-                Recent Projects
-            </h2>
-            <h4>
-                HitchHiker
-            </h4>
-            <p>
-                Developed a cutting-edge application empowering tourists to plan their future trips intelligently using Typescript and OpenAI API. Established a Firebase Database for storing and displaying previous trips allowing users to explore trip options with different filters. Implemented a user-friendly login page with Google Authorization and Email/Password options enhancing the accessibility and security
-            </p>
-            <h4>
-                PacMan
-            </h4>
-            <p>
-                Implemented the classic PacMan game using VGA display and FPGA board with Verilog. Introduced advanced dynamic ghost movement algorithms for a more challenging gaming experience and developed a robust collision detection and scoring system<br><br>
-                <button onclick="redirect('experience.html')"><span class="transition"></span>
-                    <span class="gradient"></span>
-                    <span class="label">View More</span></button><br>
-            </p>
-        </div>
-        <div class="courses">
-            <h2>
-                Recent Coursework
-            </h2>
-            <h4>
-                Online Certifications
-            </h4>
-            <p>
-                DeepLearning.AI and Stanford - Machine Learning Specialization<br>
-                IBM Skills Network - Introductions to Containers with Docker, Kubernetes and Openshift
-            </p>
-            <h4>
-                UCLA Courses
-            </h4>
-            <p>
-                CSM146 - Machine Learning<br>
-                Math 115A - Linear Algebra<br>
-                CS118 - Computer Network fundamentals<br>
-                CSM148 - Introduction to Data Science<br>
-                <button onclick="redirect('courses.html')"><span class="transition"></span>
-                    <span class="gradient"></span>
-                    <span class="label">View More</span></button><br>
-            </p>
-        </div>
-        <div class="about">
-            <h2>
-                Who am I?
-            </h2>
-            <div class="desc">
-                <div class="desc_p">
-                Born in India, raised in Africa with Indian values and with a hybrid of an Indian and African culture. A dedicated UCLA Computer Science Major and Math Minor bringing a profound passion for software development and a proven ability to deliver tangible results. Accomplished in leadership, teamwork, customer service and time management. Excels in paying attention to detail without losing a grasp on the overarching problem. Earned a certification in Full Stack Engineering and a Machine Learning Specialization through Coursera with a commitment to continuous learning. Other areas of interest include exploring diverse cultures, scientific facts, mythology, history, and automobiles.
-                <br><br>
-                Hobbies:
-                Exploring diverse cultures, scientific facts, mythology, history, and automobiles, working out, golf, tennis, chess, travelling
-                </div>
-                <div class="desc_img">
-                    <img src="PIC.png">
-                </div>
+      </div>
+      <br>
+
+      <div id="experience">
+        <h2>My Past Experiences</h2>
+        <hr style="width:200px">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>Full Stack Web Developer - Bruin Sports Analytics</h3>
+              <h4>Los Angeles, CA</h4>
+              <p>
+                <ul>
+                  <li>Created a user-friendly Web App for the UCLA Men’s Tennis Team using React.js</li>
+                  <li>Developed a dynamic scoreboard integrated with YouTube Player</li>
+                  <li>Led redesign of main page, replaced static PDF with dynamically styled script</li>
+                  <li>Implemented development environment for smoother production transition</li>
+                </ul>
+              </p>
             </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h3>External Vice President - Bruin Spacecraft Group</h3>
+              <h4>Los Angeles, CA</h4>
+              <p>
+                <ul>
+                  <li>Cultivated relationships with 120+ company contacts</li>
+                  <li>Managed a team of 12, overseeing funding and outreach</li>
+                  <li>Established events, secured sponsors, and garnered funding</li>
+                  <li>Planned community outreach events to promote STEM</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h3>Software Engineering Intern - Pullscription LLC</h3>
+              <h4>Remote</h4>
+              <p>
+                <ul>
+                  <li>Enhanced Python data integration, reducing processing time by 60%</li>
+                  <li>Implemented system for easier database access using APIs</li>
+                  <li>Spearheaded real-time error logging system, reducing response times by 80%</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h3>WebMaster - Bruin Spacecraft Group</h3>
+              <h4>Los Angeles, CA</h4>
+              <p>
+                <ul>
+                  <li>Managed pipeline for website updates, ensuring modern and user-friendly presence</li>
+                  <li>Redesigned pages, increasing new member acquisition by 25%</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h3>Volunteer Research Assistant - UCLA Orthopedic Surgery</h3>
+              <h4>Los Angeles, CA</h4>
+              <p>
+                <ul>
+                  <li>Engineered affordable 3D scanner firmware using Arduino</li>
+                  <li>Implemented camera movement for donor knee scans, achieving high accuracy</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h3>International Ambassador - UCLA Dashew Center</h3>
+              <h4>Los Angeles, CA</h4>
+              <p>
+                <ul>
+                  <li>Organized campus events to promote cross-cultural connections</li>
+                  <li>Represented international community via panels and outreach</li>
+                  <li>Supported UCLA community with campus and cultural knowledge</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h3>New Student Advisor - UCLA New Student Academic Programs</h3>
+              <h4>Los Angeles, CA</h4>
+              <p>
+                <ul>
+                  <li>Advised 150 UCLA students on curriculum and student services</li>
+                  <li>Planned and presented workshops and tours</li>
+                  <li>Facilitated group discussions on diverse topics</li>
+                </ul>
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+    <br>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <h2>Contact Me</h2>
+    <hr style="width:200px">
+
+    <div class="w3-section">
+      <p> Los Angeles, CA, USA</p>
+      <p> Phone: +1 310 7287940</p>
+      <p>Email: rit@ucla.edu</p>
     </div>
-    <script>
-        function redirect(link) {
-            window.location.href = "https://ritwebsite.web.app/"+link
-        }
-    </script>
+  
+    <!-- Footer -->
+  <footer>
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-github"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
