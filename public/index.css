@@ -20,6 +20,17 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .theme-toggle {
   background: none;
   border: none;
@@ -51,8 +62,28 @@ body, h1, h2, h3, h4, h5, h6 {
   
   .navbar-container {
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .nav-logo {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-item, .theme-toggle {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
   }
   
   .nav-item {
@@ -60,10 +91,42 @@ body, h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s;
+    flex-shrink: 0;
+  }
+
+  .nav-item:hover, .theme-toggle:hover{
+    background-color: #9dc2a3;
+  }
+
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
   }
   
-  .nav-item:hover {
-    background-color: #9dc2a3;
+  /* Responsive Hamburger Styles */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
   }
   
   #main {
@@ -184,7 +247,15 @@ a{
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   width: calc(50% - 75px); /* Adjust width to account for padding */
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .timeline-item::after {

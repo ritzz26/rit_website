@@ -9,13 +9,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-#main {margin-left: 3vw; margin-right:3vw }
+#main {
+  margin: 0 auto;
+  padding: 80px 3vw 0 3vw; /* <-- 80px pushes content below navbar */
+  max-width: 1200px;
+}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 <body class="black">
 
-<nav class="navbar">
+  <nav class="navbar">
     <div class="navbar-container">
+      <div class="nav-logo">Rit Agarwal</div>
+      <button class="hamburger" id="hamburger">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="nav-menu" id="nav-menu">
         <a href="#" class="nav-item">HOME</a>
         <a href="#about" class="nav-item">ABOUT</a>
         <a href="#projects" class="nav-item">PROJECTS</a>
@@ -23,9 +32,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <a href="#contact" class="nav-item">CONTACT</a>
         <button id="theme-toggle" class="theme-toggle">
           <i class="fa fa-moon-o"></i>
-      </button>
+        </button>
+      </div>
     </div>
-</nav>
+  </nav>
+  
 
 
 <div id="main">
@@ -315,20 +326,48 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Add this just before the closing </body> tag -->
 <script>
-  const themeToggle = document.getElementById('theme-toggle');
+  const timelineItems = document.querySelectorAll('.timeline-item');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 200); // Stagger delay: 200ms per item
+    }
+  });
+}, { threshold: 0.1 });
+
+timelineItems.forEach(item => observer.observe(item));
+
+const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
   const icon = themeToggle.querySelector('i');
 
   themeToggle.addEventListener('click', () => {
-      body.classList.toggle('light-mode');
-      if (body.classList.contains('light-mode')) {
-          icon.classList.remove('fa-moon-o');
-          icon.classList.add('fa-sun-o');
-      } else {
-          icon.classList.remove('fa-sun-o');
-          icon.classList.add('fa-moon-o');
-      }
+    body.classList.toggle('light-mode');
+    if (body.classList.contains('light-mode')) {
+      icon.classList.remove('fa-moon-o');
+      icon.classList.add('fa-sun-o');
+    } else {
+      icon.classList.remove('fa-sun-o');
+      icon.classList.add('fa-moon-o');
+    }
   });
+
+  // Hamburger menu functionality:
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  const navLinks = document.querySelectorAll('.nav-item');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
+});
 </script>
 
 </body>
