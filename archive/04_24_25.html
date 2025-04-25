@@ -40,30 +40,33 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 <div id="main">
-  <div id ="about" class="about-section">
-    <div class="about-left">
+    <header class="container" id="home">
+        <img src="headshot.jpg" class="profile-img">
       <h1>I'm Rit Agarwal.</h1>
       <p>An Aspiring and Driven Software Engineer.</p>
-      <div class="button-terminal-container">
-        <div class="button-row">
-          <button id="whoami-btn" class="whoami-button">Who am I?</button>
-          <button class="download-button">
-            <a href="Rit_Agarwal_Resume.pdf" download>
-              <i class="fa fa-download"></i> Preview Resume
-            </a>
-          </button>
-        </div>
-        <div id="terminal" class="terminal" style="display: none;"></div>
-      </div>
+    </header>
+    <div id="about">
+      <h2 class="w3-text-light-grey">Who am I?</h2>
+      <hr style="width:200px">
+      <p>
+        I’m an entry-level Software Engineer passionate about building impactful, reliable systems and continuously learning in fast-paced environments. With over 3 years of software development experience and 2 years of technical leadership, I bring not just technical skills — but ownership, adaptability, and a commitment to delivering real value.
+      </p>
+      <p>
+        I’ve optimized infrastructure costs, improved system reliability, and built scalable full-stack applications through internships, leadership roles, and personal projects. Certified in Full Stack Engineering and Machine Learning, and recognized as a Gerald and Thelma Merit Scholarship Awardee at UCLA for academic excellence and leadership, I’m always excited to learn new tools and collaborate across teams.
+      </p>
+      <p>
+        Whether leading a CubeSat team through the NASA CSLI process or developing AI-powered tools for engineering teams, I focus on solving the right problems, asking good questions, and being the kind of teammate people can count on.
+      </p>
+    <div clas="download_container">
+    <button>
+    <a href="Rit_Agarwal_Resume.pdf" download class="download-button" >
+        <i class="fa fa-download"></i> Preview Resume
+        </a>
+    </button>
+</div>
+<br>
     </div>
-    <div class="about-right">
-      <img src="headshot.jpg" class="profile-img">
-    </div>
-  </div>
-
   
-<div style="clear: both;"></div> 
-
     <div id="projects">
         <h2>My Projects</h2>
         <hr style="width:200px">
@@ -321,9 +324,51 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- END PAGE CONTENT -->
 </div>
 
-<script src="main.js"></script>
-<script src="menu.js"></script>
-<script src="terminal_chat.js"></script>
+<!-- Add this just before the closing </body> tag -->
+<script>
+  const timelineItems = document.querySelectorAll('.timeline-item');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 200); // Stagger delay: 200ms per item
+    }
+  });
+}, { threshold: 0.1 });
+
+timelineItems.forEach(item => observer.observe(item));
+
+const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+  const icon = themeToggle.querySelector('i');
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    if (body.classList.contains('light-mode')) {
+      icon.classList.remove('fa-moon-o');
+      icon.classList.add('fa-sun-o');
+    } else {
+      icon.classList.remove('fa-sun-o');
+      icon.classList.add('fa-moon-o');
+    }
+  });
+
+  // Hamburger menu functionality:
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  const navLinks = document.querySelectorAll('.nav-item');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
+});
+</script>
 
 </body>
 </html>

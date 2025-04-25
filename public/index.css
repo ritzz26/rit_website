@@ -135,12 +135,46 @@ body, h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.about-left {
+  max-width: 600px;
+  flex: 1;
+}
+
+.about-right {
+  flex-shrink: 0;
+}
+
 .profile-img {
-    border-radius: 50%;
-    width: 30%;
-    object-fit: cover;
-    float: right;
-    margin-left: 20px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#projects {
+  clear: both;
+  margin-top: 40px; /* Pushes down the project grid cleanly below both text and image */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 button {
@@ -148,6 +182,13 @@ button {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between the two buttons */
+  margin-bottom: 20px; /* breathing room from the terminal box */
 }
 
 .download-button {
@@ -367,4 +408,58 @@ footer {
 
 .social-icon:hover {
   color: #9dc2a3;
+}
+
+.whoami-button {
+  background-color: #4A7751;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.whoami-button:hover {
+  background-color: #5a8f62;
+}
+
+.terminal {
+  font-family: 'Courier New', monospace;
+  color: #9dc2a3;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  min-height: 150px;
+  position: relative;
+}
+
+.terminal-text {
+  white-space: pre-wrap;           /* Preserve newlines + allow wrapping */
+  word-wrap: break-word;           /* Break long words if needed */
+  overflow-wrap: break-word;       /* Support for all browsers */
+  font-family: 'Courier New', monospace;
+  color: #9dc2a3;
+  margin: 0;
+  padding: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #9dc2a3;
+  font-size: 1.2em;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.close-button:hover {
+  opacity: 1;
 }
